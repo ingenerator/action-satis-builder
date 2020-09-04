@@ -1,0 +1,6 @@
+/vendor
+/bin
+/.idea/workspace.xml
+Thumbs.db
+thumbs.db
+/build
