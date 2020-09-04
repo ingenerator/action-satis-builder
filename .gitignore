@@ -1,6 +1,6 @@
-/vendor
-/bin
+/builder/vendor
 /.idea/workspace.xml
 Thumbs.db
 thumbs.db
 /build
+/test/workdir/satis_output

@@ -1,0 +1,11 @@
+{
+  "ingenerator/test-satisfy": {
+    "url": "https://github.com/ingenerator/_satis-build-test-satisfy.git",
+    "defaults": {
+      "description": "Tests satisfy",
+      "require": {
+        "psr/log": "^1"
+      }
+    }
+  }
+}

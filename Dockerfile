@@ -12,7 +12,6 @@ RUN apk add --no-cache --upgrade \
     unzip
 
 ENV COMPOSER_HOME /composer
-COPY . /repo-builder/
-WORKDIR /repo-builder
+COPY ./builder /repo-builder/
 ENTRYPOINT ["/repo-builder/build-package-repo.sh"]
 
