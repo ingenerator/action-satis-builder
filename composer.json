@@ -1,0 +1,21 @@
+{
+  "require": {
+    "composer/satis": "*@dev",
+    "fitchlearning/satisfy": "dev-acoulton-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/acoulton/satisfy"
+    }
+  ],
+  "minimum-stability": "stable",
+  "config": {
+    "bin-dir": "bin",
+    "preferred-install": "dist",
+    "platform": {
+      "php": "7.4",
+      "ext-openssl": "0"
+    }
+  }
+}
