@@ -1,0 +1,6 @@
+name: 'Satis Package Repository Builder'
+description: 'Build a custom php-packages repository using satis and satisfy'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  

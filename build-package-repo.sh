@@ -2,8 +2,12 @@
 set -o nounset
 set -o errexit
 
+ls -l
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 OUTPUT_PATH="$1"
+
+
 
 echo "Compiling satis.json from dynamic package sources"
 "$DIR/bin/satisfy" \
