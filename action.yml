@@ -1,6 +1,11 @@
 name: 'Satis Package Repository Builder'
 description: 'Build a custom php-packages repository using satis and satisfy'
+inputs:
+  githubToken:
+    description: 'Github oauth token satis will use to scan repositories - can be anything unless you are using private packages'
+    required:    true
 runs:
   using: 'docker'
-  image: 'ghcr.io/ingenerator/action-satis-builder:experiment'
-  
+  image: 'ghcr.io/ingenerator/action-satis-builder:1.x'
+  env:
+    GITHUB_TOKEN: ${{ inputs.githubToken }}
