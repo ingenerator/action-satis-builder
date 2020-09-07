@@ -6,6 +6,6 @@ inputs:
     required:    true
 runs:
   using: 'docker'
-  image: 'ghcr.io/ingenerator/action-satis-builder:1.x'
+  image: 'docker://ghcr.io/ingenerator/action-satis-builder:1.x'
   env:
     GITHUB_TOKEN: ${{ inputs.githubToken }}
