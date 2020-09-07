@@ -1,11 +1,16 @@
 name: 'Satis Package Repository Builder'
 description: 'Build a custom php-packages repository using satis and satisfy'
 inputs:
+  cacheDir:
+    description: 'Composer cache directory - in the workspace - which can then be cached using github actions'
+    required: false
+    default: '_composer-cache'
   githubToken:
     description: 'Github oauth token satis will use to scan repositories - can be anything unless you are using private packages'
-    required:    true
+    required: true
 runs:
   using: 'docker'
   image: 'docker://ghcr.io/ingenerator/action-satis-builder:1.x'
   env:
+    CACHE_DIR: ${{ inputs.cacheDir }}
     GITHUB_TOKEN: ${{ inputs.githubToken }}
