@@ -11,11 +11,11 @@
   ],
   "minimum-stability": "stable",
   "config": {
-    "bin-dir": "bin",
     "preferred-install": "dist",
     "platform": {
       "php": "7.4",
       "ext-openssl": "0"
-    }
+    },
+    "vendor-dir": "builder/vendor"
   }
 }

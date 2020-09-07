@@ -1,0 +1,9 @@
+{
+  "name":      "ingenerator/satis-builder-test",
+  "homepage" : "https://satis-builder-test.ingenerator.com",
+  "repositories": [
+    { "packagist": false},
+    {"type": "vcs", "url":  "https://github.com/ingenerator/_satis-build-test"}
+  ],
+  "require-all" : true
+}

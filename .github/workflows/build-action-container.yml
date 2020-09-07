@@ -1,0 +1,55 @@
+on: [ push ]
+
+env:
+  IMAGE_NAME: action-satis-builder
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    name: Build action image
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install composer dependencies
+        uses: php-actions/composer@v2
+
+      - name: Build image
+        run: docker build . --file Dockerfile --tag $IMAGE_NAME
+
+      - name: Test image
+        run: |
+          set -o errexit
+          set -o nounset
+
+          docker run \
+            -v $PWD/test/workdir:/ghworkspace \
+            -e GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}" \
+            -e GITHUB_WORKSPACE="/ghworkspace" \
+            -w /ghworkspace \
+            $IMAGE_NAME
+
+          php test/verify-built-repo.php
+
+      - name: Push image to GitHub Container Registry
+        run: |
+          set -o errexit
+          set -o nounset
+
+          # Login to Github registry
+          # Needs a PAT with `read:packages`, `write:packages` and `repo` scopes, be *very* careful what user that is for or anyone
+          # with push access on this repo can hijack your GH account!
+          echo "${{ secrets.GH_CR_IMG_PUSH_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
+
+          IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
+          # Change all uppercase to lowercase
+          IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
+          # Strip git ref prefix from version
+          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+          # Strip "v" prefix from tag name
+          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
+
+          echo IMAGE_ID=$IMAGE_ID
+          echo VERSION=$VERSION
+          docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
+          docker push $IMAGE_ID:$VERSION
