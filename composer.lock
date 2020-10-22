@@ -176,12 +176,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "e89d68ac83892ef6fb1409dbab065a777e1506de"
+                "reference": "51d6d29b55654ccf7e51f53949b5c7821b5b86c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/e89d68ac83892ef6fb1409dbab065a777e1506de",
-                "reference": "e89d68ac83892ef6fb1409dbab065a777e1506de",
+                "url": "https://api.github.com/repos/composer/satis/zipball/51d6d29b55654ccf7e51f53949b5c7821b5b86c5",
+                "reference": "51d6d29b55654ccf7e51f53949b5c7821b5b86c5",
                 "shasum": ""
             },
             "require": {
@@ -246,7 +246,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-10-05T07:03:43+00:00"
+            "time": "2020-10-21T16:44:32+00:00"
         },
         {
             "name": "composer/semver",
@@ -1679,16 +1679,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.0.5",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "9b76b1535483cdf4edf01bb787b0217b62bd68a5"
+                "reference": "9a29e1fa7b5431969f96878b8662e3fcb18601b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/9b76b1535483cdf4edf01bb787b0217b62bd68a5",
-                "reference": "9b76b1535483cdf4edf01bb787b0217b62bd68a5",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/9a29e1fa7b5431969f96878b8662e3fcb18601b7",
+                "reference": "9a29e1fa7b5431969f96878b8662e3fcb18601b7",
                 "shasum": ""
             },
             "require": {
@@ -1703,7 +1703,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1747,7 +1747,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-05T15:13:19+00:00"
+            "time": "2020-10-21T12:45:34+00:00"
         }
     ],
     "packages-dev": [],
