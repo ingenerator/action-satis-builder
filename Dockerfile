@@ -1,3 +1,4 @@
+LABEL org.opencontainers.image.source https://github.com/ingenerator/action-satis-builder
 FROM php:7.4-cli-alpine
 
 RUN apk add --no-cache --upgrade \
