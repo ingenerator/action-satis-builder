@@ -1,5 +1,5 @@
 FROM php:7.4-cli-alpine
-
+LABEL org.opencontainers.image.source https://github.com/ingenerator/action-satis-builder
 RUN apk add --no-cache --upgrade \
     bash \
     curl \
