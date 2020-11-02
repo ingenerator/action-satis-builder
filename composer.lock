@@ -78,16 +78,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.10.16",
+            "version": "1.10.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "217f0272673c72087862c40cf91ac07eb438d778"
+                "reference": "09d42e18394d8594be24e37923031c4b7442a1cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/217f0272673c72087862c40cf91ac07eb438d778",
-                "reference": "217f0272673c72087862c40cf91ac07eb438d778",
+                "url": "https://api.github.com/repos/composer/composer/zipball/09d42e18394d8594be24e37923031c4b7442a1cb",
+                "reference": "09d42e18394d8594be24e37923031c4b7442a1cb",
                 "shasum": ""
             },
             "require": {
@@ -168,7 +168,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T07:55:59+00:00"
+            "time": "2020-10-30T21:31:58+00:00"
         },
         {
             "name": "composer/satis",
@@ -176,12 +176,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "42be3dfdc1fef4a68bfd3d932ca97467fa937c8a"
+                "reference": "6f73606c282e78de9b8c9f9bf101d7d3663a4d3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/42be3dfdc1fef4a68bfd3d932ca97467fa937c8a",
-                "reference": "42be3dfdc1fef4a68bfd3d932ca97467fa937c8a",
+                "url": "https://api.github.com/repos/composer/satis/zipball/6f73606c282e78de9b8c9f9bf101d7d3663a4d3b",
+                "reference": "6f73606c282e78de9b8c9f9bf101d7d3663a4d3b",
                 "shasum": ""
             },
             "require": {
@@ -246,7 +246,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-10-29T20:24:52+00:00"
+            "time": "2020-11-01T08:30:35+00:00"
         },
         {
             "name": "composer/semver",
