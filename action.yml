@@ -10,7 +10,7 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/ingenerator/action-satis-builder:1.x'
+  image: 'docker://ghcr.io/ingenerator/action-satis-builder:1.x-rename-github-token'
   env:
     CACHE_DIR: ${{ inputs.cacheDir }}
     COMPOSER_AUTH_TOKEN: ${{ inputs.githubToken }}
