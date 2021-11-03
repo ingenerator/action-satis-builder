@@ -4,7 +4,7 @@ set -o errexit
 
 echo "Creating composer working directory with auth token"
 mkdir $COMPOSER_HOME
-echo  "{\"github-oauth\": {\"github.com\": \"$GITHUB_TOKEN\"}}" > $COMPOSER_HOME/auth.json
+echo  "{\"github-oauth\": {\"github.com\": \"$COMPOSER_AUTH_TOKEN\"}}" > $COMPOSER_HOME/auth.json
 
 export COMPOSER_CACHE_DIR="$GITHUB_WORKSPACE/$CACHE_DIR"
 

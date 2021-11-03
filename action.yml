@@ -13,4 +13,4 @@ runs:
   image: 'docker://ghcr.io/ingenerator/action-satis-builder:1.x'
   env:
     CACHE_DIR: ${{ inputs.cacheDir }}
-    GITHUB_TOKEN: ${{ inputs.githubToken }}
+    COMPOSER_AUTH_TOKEN: ${{ inputs.githubToken }}

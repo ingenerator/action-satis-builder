@@ -25,7 +25,7 @@ jobs:
           docker run \
             -v $PWD/test/workdir:/ghworkspace \
             -e CACHE_DIR='_my-cache' \
-            -e GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}" \
+            -e COMPOSER_AUTH_TOKEN="${{ secrets.GITHUB_TOKEN }}" \
             -e GITHUB_WORKSPACE="/ghworkspace" \
             -w /ghworkspace \
             $IMAGE_NAME
