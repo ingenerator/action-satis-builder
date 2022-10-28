@@ -16,6 +16,9 @@
       "php": "7.4",
       "ext-openssl": "0"
     },
-    "vendor-dir": "builder/vendor"
+    "vendor-dir": "builder/vendor",
+    "allow-plugins": {
+      "composer/satis": true
+    }
   }
 }
