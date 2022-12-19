@@ -7,6 +7,12 @@ jobs:
   build-image:
     runs-on: ubuntu-latest
     name: Build action image
+    permissions:
+      # This sets an explicit list of restrictive permissions for the GH_TOKEN that will be issued, it still doesn't
+      # guarantee that it's safe to use third-party actions (they'd still be able to do anything we're meant to do)
+      # but it at least restricts the privilege scope
+      contents: read
+      packages: write
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -38,9 +44,7 @@ jobs:
           set -o nounset
 
           # Login to Github registry
-          # Needs a PAT with `read:packages`, `write:packages` and `repo` scopes, be *very* careful what user that is for or anyone
-          # with push access on this repo can hijack your GH account!
-          echo "${{ secrets.GH_CR_IMG_PUSH_PAT }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
 
           IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
           # Change all uppercase to lowercase
