@@ -415,12 +415,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "23fdf4c1893567c6e46a2cc7fcc868b913f03b28"
+                "reference": "d6acc829ef231e200d33018aeffc370f380e70a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/23fdf4c1893567c6e46a2cc7fcc868b913f03b28",
-                "reference": "23fdf4c1893567c6e46a2cc7fcc868b913f03b28",
+                "url": "https://api.github.com/repos/composer/satis/zipball/d6acc829ef231e200d33018aeffc370f380e70a0",
+                "reference": "d6acc829ef231e200d33018aeffc370f380e70a0",
                 "shasum": ""
             },
             "require": {
@@ -504,7 +504,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-06-14T13:22:57+00:00"
+            "time": "2023-09-11T08:14:43+00:00"
         },
         {
             "name": "composer/semver",
