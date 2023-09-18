@@ -415,18 +415,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "d6acc829ef231e200d33018aeffc370f380e70a0"
+                "reference": "6e7160fcaa4d2cdef55e0eea850480815fe1297b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/d6acc829ef231e200d33018aeffc370f380e70a0",
-                "reference": "d6acc829ef231e200d33018aeffc370f380e70a0",
+                "url": "https://api.github.com/repos/composer/satis/zipball/6e7160fcaa4d2cdef55e0eea850480815fe1297b",
+                "reference": "6e7160fcaa4d2cdef55e0eea850480815fe1297b",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^2.3.0",
                 "composer/composer": "^2.5.5",
-                "ext-mbstring": "*",
                 "ext-zip": "*",
                 "php": "^8.1",
                 "symfony/console": "^6.2.10",
@@ -434,7 +433,6 @@
                 "twig/twig": "^3.6.0"
             },
             "replace": {
-                "symfony/polyfill-mbstring": "*",
                 "symfony/polyfill-php72": "*",
                 "symfony/polyfill-php73": "*",
                 "symfony/polyfill-php74": "*",
@@ -504,7 +502,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-09-11T08:14:43+00:00"
+            "time": "2023-09-15T13:03:18+00:00"
         },
         {
             "name": "composer/semver",
@@ -1897,6 +1895,89 @@
                 }
             ],
             "time": "2023-01-26T09:26:14+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.28.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "42292d99c55abe617799667f454222c54c60e229"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/42292d99c55abe617799667f454222c54c60e229",
+                "reference": "42292d99c55abe617799667f454222c54c60e229",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-mbstring": "*"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.28-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.28.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-07-28T09:04:16+00:00"
         },
         {
             "name": "symfony/process",
