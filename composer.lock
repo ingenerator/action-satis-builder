@@ -415,22 +415,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "75617311d7b94bde64bcd15da383cfd553d249ca"
+                "reference": "a21d208b2cfc59de59cdc02975869f7e20513b34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/75617311d7b94bde64bcd15da383cfd553d249ca",
-                "reference": "75617311d7b94bde64bcd15da383cfd553d249ca",
+                "url": "https://api.github.com/repos/composer/satis/zipball/a21d208b2cfc59de59cdc02975869f7e20513b34",
+                "reference": "a21d208b2cfc59de59cdc02975869f7e20513b34",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^2.3.0",
-                "composer/composer": "^2.6.4",
+                "composer/composer": "^2.7.6",
                 "ext-zip": "*",
                 "php": "^8.1",
-                "symfony/console": "^6.3.4",
-                "twig/html-extra": "^3.9.0",
-                "twig/twig": "^3.9.3"
+                "symfony/console": "^6.4.7",
+                "twig/html-extra": "^3.10.0",
+                "twig/twig": "^3.10.2"
             },
             "replace": {
                 "symfony/polyfill-php72": "*",
@@ -442,7 +442,7 @@
             "require-dev": {
                 "ext-json": "*",
                 "mikey179/vfsstream": "^1.6.11",
-                "phpunit/phpunit": "^9.6.13"
+                "phpunit/phpunit": "^9.6.19"
             },
             "default-branch": true,
             "bin": [
@@ -502,7 +502,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2024-05-10T09:59:12+00:00"
+            "time": "2024-05-14T10:04:24+00:00"
         },
         {
             "name": "composer/semver",
