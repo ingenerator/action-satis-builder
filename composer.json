@@ -1,6 +1,6 @@
 {
   "require": {
-    "composer/satis": "*@dev",
+    "composer/satis": "3.x@dev",
     "fitchlearning/satisfy": "dev-acoulton-master"
   },
   "repositories": [
