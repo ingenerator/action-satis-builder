@@ -423,12 +423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "1dbc0a32ec1b915b0a45ba8273ce4375603b527d"
+                "reference": "24995745c2c6c8ca9cf70def61004b64314dec6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/1dbc0a32ec1b915b0a45ba8273ce4375603b527d",
-                "reference": "1dbc0a32ec1b915b0a45ba8273ce4375603b527d",
+                "url": "https://api.github.com/repos/composer/satis/zipball/24995745c2c6c8ca9cf70def61004b64314dec6c",
+                "reference": "24995745c2c6c8ca9cf70def61004b64314dec6c",
                 "shasum": ""
             },
             "require": {
@@ -502,7 +502,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2024-10-17T07:42:58+00:00"
+            "time": "2024-10-21T13:38:50+00:00"
         },
         {
             "name": "composer/semver",
@@ -2584,8 +2584,8 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2",
         "ext-openssl": "0"
