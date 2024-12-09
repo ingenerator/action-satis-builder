@@ -8,6 +8,10 @@ echo  "{\"github-oauth\": {\"github.com\": \"$GITHUB_TOKEN\"}}" > $COMPOSER_HOME
 
 export COMPOSER_CACHE_DIR="$GITHUB_WORKSPACE/$CACHE_DIR"
 
+echo "Marking workspace safe for git"
+# Because this is a docker mount and the ownership in and outside is different
+git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
 echo "Compiling satis.json from dynamic package sources"
 "/repo-builder/vendor/bin/satisfy" \
   --repofile "$GITHUB_WORKSPACE/satis-explicit-packages.json" \
