@@ -365,13 +365,13 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "3.x-dev"
-                },
                 "phpstan": {
                     "includes": [
                         "extension.neon"
                     ]
+                },
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
                 }
             },
             "autoload": {
@@ -423,12 +423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "79d28d7d06b663ed38e807fb856eec30cebfc786"
+                "reference": "e9e2e529ab3ede766660b51c09bb0e7a96a060c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/79d28d7d06b663ed38e807fb856eec30cebfc786",
-                "reference": "79d28d7d06b663ed38e807fb856eec30cebfc786",
+                "url": "https://api.github.com/repos/composer/satis/zipball/e9e2e529ab3ede766660b51c09bb0e7a96a060c0",
+                "reference": "e9e2e529ab3ede766660b51c09bb0e7a96a060c0",
                 "shasum": ""
             },
             "require": {
@@ -502,7 +502,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2024-11-25T12:30:13+00:00"
+            "time": "2024-12-24T11:55:44+00:00"
         },
         {
             "name": "composer/semver",
