@@ -6,16 +6,14 @@ set_error_handler(
         throw new ErrorException($errstr, $errno, $errno, $errfile, $errline);
     }
 );
-assert_options(ASSERT_ACTIVE, TRUE);
-assert_options(
-    ASSERT_CALLBACK,
-    function ($file, $line, $assertion, $message) {
-        throw new \Exception("Assertion $assertion failed: $message");
-    }
-);
 
 define('PACKAGES_FILE_PATH', __DIR__.'/workdir/satis_output/packages.json');
 define('PACKAGES_HTML_PATH', __DIR__.'/workdir/satis_output/index.html');
+
+if (!ini_get('zend.assertions') === 1) {
+    echo "This script must run with zend.assertions=1\n";
+    exit(1);
+}
 
 function parse_package_repo()
 {

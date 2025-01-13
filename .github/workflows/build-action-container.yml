@@ -36,7 +36,7 @@ jobs:
             -w /ghworkspace \
             $IMAGE_NAME
 
-          php test/verify-built-repo.php
+          php -d zend.assertions=1 test/verify-built-repo.php
 
       - name: Push image to GitHub Container Registry
         run: |
