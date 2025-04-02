@@ -423,19 +423,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "99d4928ba07a50092cf2536379255f9d6fdd573e"
+                "reference": "cfcbee80463fafef01f443233cc50e6b8c4b9c79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/99d4928ba07a50092cf2536379255f9d6fdd573e",
-                "reference": "99d4928ba07a50092cf2536379255f9d6fdd573e",
+                "url": "https://api.github.com/repos/composer/satis/zipball/cfcbee80463fafef01f443233cc50e6b8c4b9c79",
+                "reference": "cfcbee80463fafef01f443233cc50e6b8c4b9c79",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^2.3.0",
                 "composer/composer": "^2.8.6",
                 "ext-zip": "*",
-                "symfony/console": "^7.1.5",
+                "symfony/console": "^7.2.5",
                 "twig/html-extra": "^3.20.0",
                 "twig/twig": "^3.20.0"
             },
@@ -502,7 +502,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-03-25T13:03:28+00:00"
+            "time": "2025-04-01T11:54:21+00:00"
         },
         {
             "name": "composer/semver",
