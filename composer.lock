@@ -423,19 +423,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "c9a1cffb8a51febca99e66ee90139b95c943719f"
+                "reference": "560f9a4ea8cdc1a0d0f337c94987fdcafcb4bd2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/c9a1cffb8a51febca99e66ee90139b95c943719f",
-                "reference": "c9a1cffb8a51febca99e66ee90139b95c943719f",
+                "url": "https://api.github.com/repos/composer/satis/zipball/560f9a4ea8cdc1a0d0f337c94987fdcafcb4bd2b",
+                "reference": "560f9a4ea8cdc1a0d0f337c94987fdcafcb4bd2b",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^2.3.0",
                 "composer/composer": "^2.8.9",
                 "ext-zip": "*",
-                "symfony/console": "^7.3.0",
+                "symfony/console": "^7.3.1",
                 "twig/html-extra": "^3.21.0",
                 "twig/twig": "^3.21.1"
             },
@@ -502,7 +502,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-06-23T15:07:38+00:00"
+            "time": "2025-07-08T07:54:06+00:00"
         },
         {
             "name": "composer/semver",
@@ -1274,16 +1274,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v7.3.0",
+            "version": "v7.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "66c1440edf6f339fd82ed6c7caa76cb006211b44"
+                "reference": "9e27aecde8f506ba0fd1d9989620c04a87697101"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/66c1440edf6f339fd82ed6c7caa76cb006211b44",
-                "reference": "66c1440edf6f339fd82ed6c7caa76cb006211b44",
+                "url": "https://api.github.com/repos/symfony/console/zipball/9e27aecde8f506ba0fd1d9989620c04a87697101",
+                "reference": "9e27aecde8f506ba0fd1d9989620c04a87697101",
                 "shasum": ""
             },
             "require": {
@@ -1348,7 +1348,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v7.3.0"
+                "source": "https://github.com/symfony/console/tree/v7.3.1"
             },
             "funding": [
                 {
@@ -1364,7 +1364,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-24T10:34:04+00:00"
+            "time": "2025-06-27T19:55:54+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
