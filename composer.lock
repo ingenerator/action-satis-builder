@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "composer/ca-bundle",
-            "version": "1.5.9",
+            "version": "1.5.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "1905981ee626e6f852448b7aaa978f8666c5bc54"
+                "reference": "961a5e4056dd2e4a2eedcac7576075947c28bf63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/1905981ee626e6f852448b7aaa978f8666c5bc54",
-                "reference": "1905981ee626e6f852448b7aaa978f8666c5bc54",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/961a5e4056dd2e4a2eedcac7576075947c28bf63",
+                "reference": "961a5e4056dd2e4a2eedcac7576075947c28bf63",
                 "shasum": ""
             },
             "require": {
@@ -64,7 +64,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.5.9"
+                "source": "https://github.com/composer/ca-bundle/tree/1.5.10"
             },
             "funding": [
                 {
@@ -76,7 +76,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-11-06T11:46:17+00:00"
+            "time": "2025-12-08T15:06:51+00:00"
         },
         {
             "name": "composer/class-map-generator",
@@ -414,12 +414,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "16de32465e93e7ce410de5cfa2bffbff9cc1c544"
+                "reference": "b3806accc5b85bf5d4b5384d8fd0ea7bbba045b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/16de32465e93e7ce410de5cfa2bffbff9cc1c544",
-                "reference": "16de32465e93e7ce410de5cfa2bffbff9cc1c544",
+                "url": "https://api.github.com/repos/composer/satis/zipball/b3806accc5b85bf5d4b5384d8fd0ea7bbba045b5",
+                "reference": "b3806accc5b85bf5d4b5384d8fd0ea7bbba045b5",
                 "shasum": ""
             },
             "require": {
@@ -493,7 +493,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-12-01T11:14:43+00:00"
+            "time": "2025-12-08T14:46:02+00:00"
         },
         {
             "name": "composer/semver",
