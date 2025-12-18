@@ -410,16 +410,16 @@
         },
         {
             "name": "composer/satis",
-            "version": "dev-main",
+            "version": "3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/satis.git",
-                "reference": "b3806accc5b85bf5d4b5384d8fd0ea7bbba045b5"
+                "reference": "4864197f4eddf7f3b53f9d0c8cf28d01cb463b04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/satis/zipball/b3806accc5b85bf5d4b5384d8fd0ea7bbba045b5",
-                "reference": "b3806accc5b85bf5d4b5384d8fd0ea7bbba045b5",
+                "url": "https://api.github.com/repos/composer/satis/zipball/4864197f4eddf7f3b53f9d0c8cf28d01cb463b04",
+                "reference": "4864197f4eddf7f3b53f9d0c8cf28d01cb463b04",
                 "shasum": ""
             },
             "require": {
@@ -435,7 +435,6 @@
                 "mikey179/vfsstream": "^1.6.12",
                 "phpunit/phpunit": "^9.6.29"
             },
-            "default-branch": true,
             "bin": [
                 "bin/satis"
             ],
@@ -493,7 +492,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-12-08T14:46:02+00:00"
+            "time": "2025-12-15T09:27:11+00:00"
         },
         {
             "name": "composer/semver",
@@ -2710,16 +2709,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.22.1",
+            "version": "v3.22.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "1de2ec1fc43ab58a4b7e80b214b96bfc895750f3"
+                "reference": "946ddeafa3c9f4ce279d1f34051af041db0e16f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/1de2ec1fc43ab58a4b7e80b214b96bfc895750f3",
-                "reference": "1de2ec1fc43ab58a4b7e80b214b96bfc895750f3",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/946ddeafa3c9f4ce279d1f34051af041db0e16f2",
+                "reference": "946ddeafa3c9f4ce279d1f34051af041db0e16f2",
                 "shasum": ""
             },
             "require": {
@@ -2773,7 +2772,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.22.1"
+                "source": "https://github.com/twigphp/Twig/tree/v3.22.2"
             },
             "funding": [
                 {
@@ -2785,7 +2784,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-11-16T16:01:12+00:00"
+            "time": "2025-12-14T11:28:47+00:00"
         }
     ],
     "packages-dev": [],
